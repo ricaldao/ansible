@@ -50,6 +50,7 @@ DOCUMENTATION = '''
           - Toggle to decidewhether to verify the Foreman certificate.
           - It can be set to '1' to verify SSL certificates using the installed CAs or to a path pointing to a CA bundle.
           - Set to '0' to disable certificate checking.
+          - Also can be set to '/etc/foreman-proxy/ssl_ca.pem' (https://theforeman.org/plugins/foreman_ansible/2.x/index.html)
         env:
           - name: FOREMAN_SSL_VERIFY
         default: 1
